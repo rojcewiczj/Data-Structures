@@ -133,4 +133,5 @@ class DoublyLinkedList:
             else:
               print(current_node.value)
               break
-           
+
+  

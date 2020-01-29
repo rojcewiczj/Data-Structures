@@ -8,10 +8,16 @@ class Stack:
         # self.storage = ?
         self.storage = DoublyLinkedList()
     def push(self, value):
-        pass
+        self.size +=1
+        self.storage.add_to_head(value)
 
     def pop(self):
-        pass
+        if self.size != 0:
+            self.size -= 1
+            return self.storage.remove_from_head()
+        else:
+            return
+       
 
     def len(self):
-        pass
+        return self.size
