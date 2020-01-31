@@ -25,6 +25,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         self.assertFalse(self.bst.contains(8))
 
     def test_get_max(self):
+        self.bst.insert(5)
         self.assertEqual(self.bst.get_max(), 5)
         self.bst.insert(30)
         self.assertEqual(self.bst.get_max(), 30)
@@ -42,6 +43,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         v4 = random.randint(1, 101)
         v5 = random.randint(1, 101)
 
+      
         self.bst.insert(v1)
         self.bst.insert(v2)
         self.bst.insert(v3)
@@ -49,7 +51,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         self.bst.insert(v5)
 
         self.bst.for_each(cb)
-
+       
         self.assertTrue(5 in arr)
         self.assertTrue(v1 in arr)
         self.assertTrue(v2 in arr)

@@ -5,7 +5,7 @@ class Node:
     def __init__(self, key, val):
         # keep track of key for later use;
         # given only a Node, we are able to
-        # delete it from a node_map (see LRUCache)
+        # delete it from storage (see LRUCache)
         self.key = key
         self.val = val
         self.next = None
